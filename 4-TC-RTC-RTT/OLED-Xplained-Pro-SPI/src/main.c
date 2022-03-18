@@ -240,6 +240,7 @@ int main (void)
 	                                                  
    
 	while(1) {
+		pmc_sleep(SAM_PM_SMODE_SLEEP_WFI);
 		if(flag_rtc_alarm){                                                                                 
           	tc_start(TC0, 2);
           	flag_rtc_alarm = 0;                                                                                                                                             
